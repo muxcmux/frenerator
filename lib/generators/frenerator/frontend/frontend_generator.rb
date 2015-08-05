@@ -24,7 +24,7 @@ module Frenerator
       end
       
       def components
-        copy_file ".keep", "components/.keep"
+        copy_file ".keep", "app/components/.keep"
       end
       
       def javascripts
