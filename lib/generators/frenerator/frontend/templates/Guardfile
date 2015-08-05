@@ -1,0 +1,22 @@
+guard :bundler do
+  watch('Gemfile')
+  # Uncomment next line if your Gemfile contains the `gemspec' command.
+  # watch(/^.+\.gemspec/)
+end
+
+guard 'rails' do
+  watch('Gemfile.lock')
+  watch(%r{^(config|lib)/.*})
+end
+
+guard 'livereload' do
+  watch(%r{app/views/.+\.erb})
+  watch(%r{app/components/.+\.erb})
+  watch(%r{app/helpers/.+\.rb})
+  # Rails Assets Pipeline
+  watch('app/assets/javascripts/application.js')
+  # Templates
+  watch('app/assets/javascripts/templates.js')
+  watch(%r{app/assets/stylesheets/(.+\.scss).*$}) { |m| "assets/#{m[1]}" }
+  watch(%r{app/components/(.+\.scss).*$}) { |m| "assets/#{m[1]}" }
+end

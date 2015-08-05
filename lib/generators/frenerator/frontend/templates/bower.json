@@ -1,0 +1,21 @@
+{
+  "name": "assets",
+  "version": "0.0.0",
+  "authors": [
+    "Tony <anthony.karasavov@artirix.com>"
+  ],
+  "license": "No license",
+  "private": true,
+  "dependencies": {
+    "susy": "~2.2.5",
+    "lodash": "~3.9.3",
+    "backbone": "~1.2.1",
+    "fastclick": "~1.0.6",
+    "jquery": "~2.1.4",
+    "handlebars": "~3.0.3",
+    "breakpoint-sass": "~2.6.1",
+    "compass-mixins": "~1.0.2",
+    "jquery-ujs": "~1.0.4",
+    "normalize-scss": "~3.0.3"
+  }
+}
