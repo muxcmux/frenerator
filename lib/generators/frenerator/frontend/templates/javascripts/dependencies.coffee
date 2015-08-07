@@ -10,7 +10,7 @@
 #
 # ------------------------
 #= require jquery
-#= require jquery.cookie
+#= require jquery.cookie/jquery.cookie
 #= require jquery-ujs
 #= require lodash
 #= require backbone
