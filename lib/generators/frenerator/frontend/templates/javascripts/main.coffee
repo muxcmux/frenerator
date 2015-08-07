@@ -11,8 +11,8 @@ App.init = ->
     if typeof(component.prototype.el) != 'undefined' && $(component.prototype.el).length != 0
       console.info "Initializing component: #{name}"
       new component
-    # Notify all components have initialized
-    console.info 'App ready'
-    App.Dispatch.trigger 'app:ready'
+  # Notify all components have initialized
+  console.info 'App ready'
+  App.Dispatch.trigger 'app:ready'
   
 $(document).ready App.init
