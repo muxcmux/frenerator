@@ -11,6 +11,8 @@ end
 
 guard 'livereload' do
   watch(%r{app/views/.+\.erb})
+  watch(%r{app/controllers/.+\.rb})
+  watch(%r{app/models/.+\.rb})
   watch(%r{app/components/.+\.erb})
   watch(%r{app/helpers/.+\.rb})
   # Rails Assets Pipeline
