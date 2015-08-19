@@ -18,5 +18,7 @@ guard 'livereload' do
   # Templates
   watch('app/assets/javascripts/templates.js')
   watch(%r{app/assets/stylesheets/(.+\.scss).*$}) { |m| "assets/#{m[1]}" }
+  watch(%r{app/assets/javascripts/(.+\.coffee).*$}) { |m| "assets/#{m[1]}" }
+  watch(%r{app/components/(.+\.coffee).*$}) { |m| "assets/#{m[1]}" }
   watch(%r{app/components/(.+\.scss).*$}) { |m| "assets/#{m[1]}" }
 end
